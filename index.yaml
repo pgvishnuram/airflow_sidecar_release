@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  airflow:
+  - apiVersion: v1
+    created: "2021-05-21T21:13:41.886832+05:30"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: '@stable'
+      version: 6.3.12
+    description: Helm chart to deploy the Astronomer Platform Airflow module
+    digest: 2a88a6e4b15f3ab1e3241b6c743ce3ebaa65bebf42d16ce9c93ddb351d7407f7
+    icon: https://airflow.apache.org/docs/apache-airflow/stable/_images/pin_large.png
+    keywords:
+    - astronomer
+    - airflow
+    name: airflow
+    urls:
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-0.19.1.tgz
+    version: 0.19.1
+generated: "2021-05-21T21:13:41.879087+05:30"
