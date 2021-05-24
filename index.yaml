@@ -2,14 +2,14 @@ apiVersion: v1
 entries:
   airflow:
   - apiVersion: v1
-    created: "2021-05-24T19:25:46.389047+05:30"
+    created: "2021-05-24T20:27:07.180458+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
       repository: '@stable'
       version: 6.3.12
     description: Helm chart to deploy the Astronomer Platform Airflow module
-    digest: 1b9d5928b08e64654180c758f112e4743668d210378b73d5d503b388464befff
+    digest: f673523b51fcf3b5696e751f8502f5bcc7945e3415b74ef66031df2238bf9be0
     icon: https://airflow.apache.org/docs/apache-airflow/stable/_images/pin_large.png
     keywords:
     - astronomer
@@ -21,7 +21,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: 11.5.0
-    created: "2021-05-24T19:25:46.390291+05:30"
+    created: "2021-05-24T20:27:07.181858+05:30"
     description: Chart for PostgreSQL, an object-relational database management system
       (ORDBMS) with an emphasis on extensibility and on standards-compliance.
     digest: e3d8f710db745334731a5ed5d0a3b8731bb74109388e4755cc1ef6b9c4b2f288
@@ -45,4 +45,4 @@ entries:
     urls:
     - https://pgvishnuram.github.io/airflow_sidecar_release/charts/postgresql-6.3.12.tgz
     version: 6.3.12
-generated: "2021-05-24T19:25:46.380156+05:30"
+generated: "2021-05-24T20:27:07.169564+05:30"
