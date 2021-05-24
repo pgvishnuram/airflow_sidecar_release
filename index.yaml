@@ -18,31 +18,4 @@ entries:
     urls:
     - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-0.19.0.tgz
     version: 0.19.0
-  postgresql:
-  - apiVersion: v1
-    appVersion: 11.5.0
-    created: "2021-05-24T20:39:47.835138+05:30"
-    description: Chart for PostgreSQL, an object-relational database management system
-      (ORDBMS) with an emphasis on extensibility and on standards-compliance.
-    digest: e3d8f710db745334731a5ed5d0a3b8731bb74109388e4755cc1ef6b9c4b2f288
-    home: https://www.postgresql.org/
-    icon: https://bitnami.com/assets/stacks/postgresql/img/postgresql-stack-110x117.png
-    keywords:
-    - postgresql
-    - postgres
-    - database
-    - sql
-    - replication
-    - cluster
-    maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
-    - email: cedric@desaintmartin.fr
-      name: desaintmartin
-    name: postgresql
-    sources:
-    - https://github.com/bitnami/bitnami-docker-postgresql
-    urls:
-    - https://pgvishnuram.github.io/airflow_sidecar_release/charts/postgresql-6.3.12.tgz
-    version: 6.3.12
 generated: "2021-05-24T20:39:47.823097+05:30"
