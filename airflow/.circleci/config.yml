@@ -1,0 +1,144 @@
+version: 2.1
+
+workflows:
+  version: 2.1
+  install-airflow-chart:
+    jobs:
+      - lint
+      - unittest-charts
+
+      - build-and-release-internal:
+          context:
+            - gcp-astronomer-prod
+          requires:
+          - lint
+          - unittest-charts
+
+      - airflow-test:
+          matrix:
+            parameters:
+              # https://hub.docker.com/r/kindest/node/tags
+              kube_version: ["1.16.15", "1.17.17", "1.18.15", "1.19.7"]
+              executor: ["CeleryExecutor", "LocalExecutor", "KubernetesExecutor"]
+          requires:
+          - build-and-release-internal
+
+      - approve-release-prod:
+          type: approval
+          requires:
+            - 'airflow-test'
+          filters:
+            branches:
+              only:
+                - '/release-\d+\.\d+/'
+
+      - release-public:
+          context:
+            - github-repo
+            - gcp-astronomer-prod
+          requires:
+            - approve-release-prod
+          filters:
+            branches:
+              only:
+                - '/release-\d+\.\d+/'
+
+jobs:
+  lint:
+    docker:
+      - image: alpine/helm:3.5.3
+    steps:
+      - checkout
+      - run:
+          name: Lint the Airflow chart
+          command: bin/lint
+
+  unittest-charts:
+    docker:
+      - image: alpine/helm:3.5.3
+        entrypoint: /bin/sh
+    steps:
+      - checkout
+      - run:
+          name: unittest the Airflow chart
+          command: |
+            apk add git bash
+            helm repo add stable https://charts.helm.sh/stable
+            helm dep update
+            helm plugin install https://github.com/astronomer/helm-unittest/
+            cp files/pod-template-file.yaml templates
+            helm unittest .
+
+  build-and-release-internal:
+    docker:
+      - image: quay.io/astronomer/ci-helm-release:2021-04
+    steps:
+      - checkout
+      - run:
+          name: Package and release to internal
+          command: bin/package-and-release-internal
+      - persist_to_workspace:
+          root: /tmp/airflow-chart-package
+          paths:
+            - './*.tgz'
+
+  airflow-test:
+    machine:
+      # https://circleci.com/docs/2.0/configuration-reference/#available-machine-images
+      image: ubuntu-2004:202101-01
+      resource_class: large
+    parameters:
+      executor:
+        type: string
+        default: "LocalExecutor"
+      kube_version:
+        type: string
+        default: "1.18.8"
+    steps:
+      - attach_workspace:
+          at: /tmp/workspace
+      - checkout
+      - run:
+          name: Install Airflow chart
+          command: |
+            pyenv global 3.9.1
+            export KUBE_VERSION=<< parameters.kube_version >>
+            export EXECUTOR=<< parameters.executor >>
+            HELM_CHART_PATH=$(find /tmp/workspace/ -name 'airflow-*.tgz')
+            export HELM_CHART_PATH
+            bin/install-ci-tools
+            bin/run-ci
+
+  release-internal:
+    docker:
+      - image: quay.io/astronomer/ci-helm-release:2021-04
+    steps:
+      - checkout
+      - run:
+          name: Release the Airflow chart to internal
+          command: bin/package-and-release-internal
+
+  release-public:
+    docker:
+      - image: quay.io/astronomer/ci-helm-release:2021-04
+    steps:
+      - checkout
+      - publish-github-release
+      - run:
+          name: "Copy internal chart to prod repo"
+          command: bin/release-internal-to-prod
+
+commands:
+  publish-github-release:
+    description: "Create a release on GitHub"
+    parameters:
+      tag:
+        type: string
+        default:  "$NEXT_TAG"
+    steps:
+      - run:
+          name: Create a release on GitHub
+          command: |
+            set -xe
+            # We can remove --debug after we are happy with it
+            astronomer-ci --debug publish-github-release --github-repository "$CIRCLE_PROJECT_REPONAME" --github-organization "$CIRCLE_PROJECT_USERNAME" --commitish "$CIRCLE_SHA1"

@@ -1,0 +1,40 @@
+---
+exclude: '^(venv|\.vscode)' # regex
+repos:
+  - repo: https://github.com/psf/black
+    rev: 20.8b1
+    hooks:
+      - id: black
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+        args: ["--allow-multiple-documents"]
+        exclude: "(charts|templates|files)"
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: file-contents-sorter
+        args: ["--ignore-case", "--unique"]
+        files: '^\.gitignore$'
+      - id: no-commit-to-branch
+        args: ["-b", "master"]
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+      - id: sort-simple-yaml
+      - id: trailing-whitespace
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.9.0
+    hooks:
+      - id: flake8
+        args:
+          - --ignore=E501,W503
+  - repo: https://github.com/detailyang/pre-commit-shell
+    rev: 1.0.5
+    hooks:
+      - id: shell-lint
