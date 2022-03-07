@@ -2,7 +2,23 @@ apiVersion: v1
 entries:
   airflow:
   - apiVersion: v2
-    created: "2022-03-07T14:34:10.456509+05:30"
+    created: "2022-03-07T15:53:11.951103+05:30"
+    dependencies:
+    - name: airflow
+      repository: https://airflow.apache.org
+      version: 1.4.0
+    description: Helm chart to deploy the Astronomer Platform Airflow module
+    digest: 46b21dd8ecdd687dba0fdbdb1c9c484226cdf3319f97aded71f587fb69527599
+    icon: https://airflow.apache.org/docs/apache-airflow/stable/_images/pin_large.png
+    keywords:
+    - astronomer
+    - airflow
+    name: airflow
+    urls:
+    - airflow-1.1.0-rc3.tgz
+    version: 1.1.0-rc3
+  - apiVersion: v2
+    created: "2022-03-07T15:53:11.942921+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -18,7 +34,7 @@ entries:
     - airflow-1.1.0-rc2.tgz
     version: 1.1.0-rc2
   - apiVersion: v2
-    created: "2022-03-07T14:34:10.448229+05:30"
+    created: "2022-03-07T15:53:11.93445+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.3.1
@@ -34,7 +50,7 @@ entries:
     - airflow-1.1.0-rc1.tgz
     version: 1.1.0-rc1
   - apiVersion: v2
-    created: "2022-03-07T14:34:10.439643+05:30"
+    created: "2022-03-07T15:53:11.925912+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -50,7 +66,7 @@ entries:
     - airflow-1.0.0-rc3.tgz
     version: 1.0.0-rc3
   - apiVersion: v1
-    created: "2022-03-07T14:34:10.430803+05:30"
+    created: "2022-03-07T15:53:11.917627+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -66,7 +82,7 @@ entries:
     - airflow-1.0.0-rc2.tgz
     version: 1.0.0-rc2
   - apiVersion: v1
-    created: "2022-03-07T14:34:10.423296+05:30"
+    created: "2022-03-07T15:53:11.910066+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -82,7 +98,7 @@ entries:
     - airflow-1.0.0-rc1.tgz
     version: 1.0.0-rc1
   - apiVersion: v1
-    created: "2022-03-07T14:34:10.415068+05:30"
+    created: "2022-03-07T15:53:11.901409+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -99,7 +115,7 @@ entries:
     - airflow-0.19.1.tgz
     version: 0.19.1
   - apiVersion: v1
-    created: "2022-03-07T14:34:10.411317+05:30"
+    created: "2022-03-07T15:53:11.897056+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -115,4 +131,4 @@ entries:
     urls:
     - airflow-0.19.0.tgz
     version: 0.19.0
-generated: "2022-03-07T14:34:10.406636+05:30"
+generated: "2022-03-07T15:53:11.89201+05:30"
