@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   airflow:
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.871123+05:30"
+    created: "2023-02-09T08:43:30.471032+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.7.0-astro
@@ -18,7 +18,7 @@ entries:
     - airflow-1.8.0-rc2.tgz
     version: 1.8.0-rc2
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.860651+05:30"
+    created: "2023-02-09T08:43:30.461638+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -34,7 +34,23 @@ entries:
     - airflow-1.8.0-rc1.tgz
     version: 1.8.0-rc1
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.850405+05:30"
+    created: "2023-02-09T08:43:30.451002+05:30"
+    dependencies:
+    - name: airflow
+      repository: https://airflow.apache.org
+      version: 1.7.0
+    description: Helm chart to deploy the Astronomer Platform Airflow module
+    digest: 4ac6a16afc5ac892e9f8957eb0fcbc24cc85ac814e0ee20ad73ef9fcc564efed
+    icon: https://airflow.apache.org/docs/apache-airflow/stable/_images/pin_large.png
+    keywords:
+    - astronomer
+    - airflow
+    name: airflow
+    urls:
+    - airflow-1.7.7-rc6.tgz
+    version: 1.7.7-rc6
+  - apiVersion: v2
+    created: "2023-02-09T08:43:30.442963+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -50,7 +66,7 @@ entries:
     - airflow-1.7.7-rc5.tgz
     version: 1.7.7-rc5
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.840695+05:30"
+    created: "2023-02-09T08:43:30.433753+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -66,7 +82,7 @@ entries:
     - airflow-1.7.7-rc4.tgz
     version: 1.7.7-rc4
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.81858+05:30"
+    created: "2023-02-09T08:43:30.425121+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -82,7 +98,7 @@ entries:
     - airflow-1.7.7-rc3.tgz
     version: 1.7.7-rc3
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.735134+05:30"
+    created: "2023-02-09T08:43:30.341407+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -98,7 +114,7 @@ entries:
     - airflow-1.7.7-rc2.tgz
     version: 1.7.7-rc2
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.633843+05:30"
+    created: "2023-02-09T08:43:30.258813+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -114,7 +130,7 @@ entries:
     - airflow-1.7.7-rc1.tgz
     version: 1.7.7-rc1
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.549317+05:30"
+    created: "2023-02-09T08:43:30.176368+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -130,7 +146,7 @@ entries:
     - airflow-1.7.6-rc4.tgz
     version: 1.7.6-rc4
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.538376+05:30"
+    created: "2023-02-09T08:43:30.16493+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.7.0-dev
@@ -146,7 +162,7 @@ entries:
     - airflow-1.7.0-rc2.tgz
     version: 1.7.0-rc2
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.525995+05:30"
+    created: "2023-02-09T08:43:30.154086+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -162,7 +178,7 @@ entries:
     - airflow-1.6.0.tgz
     version: 1.6.0
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.514967+05:30"
+    created: "2023-02-09T08:43:30.143689+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -178,7 +194,7 @@ entries:
     - airflow-1.6.0-rc3.tgz
     version: 1.6.0-rc3
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.493102+05:30"
+    created: "2023-02-09T08:43:30.133562+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -194,7 +210,7 @@ entries:
     - airflow-1.6.0-rc2.tgz
     version: 1.6.0-rc2
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.480962+05:30"
+    created: "2023-02-09T08:43:30.121526+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -210,7 +226,7 @@ entries:
     - airflow-1.6.0-rc1.tgz
     version: 1.6.0-rc1
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.469414+05:30"
+    created: "2023-02-09T08:43:30.111153+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -226,7 +242,7 @@ entries:
     - airflow-1.1.0-rc7.tgz
     version: 1.1.0-rc7
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.458263+05:30"
+    created: "2023-02-09T08:43:30.089015+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -242,7 +258,7 @@ entries:
     - airflow-1.1.0-rc6.tgz
     version: 1.1.0-rc6
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.446946+05:30"
+    created: "2023-02-09T08:43:30.075881+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -258,7 +274,7 @@ entries:
     - airflow-1.1.0-rc5.tgz
     version: 1.1.0-rc5
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.432754+05:30"
+    created: "2023-02-09T08:43:30.057821+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -274,7 +290,7 @@ entries:
     - airflow-1.1.0-rc4.tgz
     version: 1.1.0-rc4
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.421919+05:30"
+    created: "2023-02-09T08:43:30.047168+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -290,7 +306,7 @@ entries:
     - airflow-1.1.0-rc3.tgz
     version: 1.1.0-rc3
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.411279+05:30"
+    created: "2023-02-09T08:43:30.037543+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -306,7 +322,7 @@ entries:
     - airflow-1.1.0-rc2.tgz
     version: 1.1.0-rc2
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.400708+05:30"
+    created: "2023-02-09T08:43:30.020395+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.3.1
@@ -322,7 +338,7 @@ entries:
     - airflow-1.1.0-rc1.tgz
     version: 1.1.0-rc1
   - apiVersion: v2
-    created: "2023-02-08T16:57:37.390184+05:30"
+    created: "2023-02-09T08:43:30.007591+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -338,7 +354,7 @@ entries:
     - airflow-1.0.0-rc3.tgz
     version: 1.0.0-rc3
   - apiVersion: v1
-    created: "2023-02-08T16:57:37.379749+05:30"
+    created: "2023-02-09T08:43:29.996718+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -354,7 +370,7 @@ entries:
     - airflow-1.0.0-rc2.tgz
     version: 1.0.0-rc2
   - apiVersion: v1
-    created: "2023-02-08T16:57:37.371694+05:30"
+    created: "2023-02-09T08:43:29.988067+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -370,7 +386,7 @@ entries:
     - airflow-1.0.0-rc1.tgz
     version: 1.0.0-rc1
   - apiVersion: v1
-    created: "2023-02-08T16:57:37.361199+05:30"
+    created: "2023-02-09T08:43:29.979342+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -387,7 +403,7 @@ entries:
     - airflow-0.19.1.tgz
     version: 0.19.1
   - apiVersion: v1
-    created: "2023-02-08T16:57:37.357741+05:30"
+    created: "2023-02-09T08:43:29.974311+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -406,7 +422,7 @@ entries:
   astronomer:
   - apiVersion: v2
     appVersion: 0.29.1
-    created: "2023-02-08T16:57:37.881158+05:30"
+    created: "2023-02-09T08:43:30.481725+05:30"
     dependencies:
     - condition: global.astronomerEnabled
       name: astronomer
@@ -495,4 +511,4 @@ entries:
     urls:
     - astronomer-0.29.1.tgz
     version: 0.29.1
-generated: "2023-02-08T16:57:37.348653+05:30"
+generated: "2023-02-09T08:43:29.966519+05:30"
