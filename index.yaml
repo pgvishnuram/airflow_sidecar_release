@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   airflow:
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.457875+05:30"
+    created: "2023-11-29T16:06:33.698891+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.7.0-astro
@@ -15,10 +15,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.8.0-rc2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.8.0-rc2.tgz
     version: 1.8.0-rc2
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.450952+05:30"
+    created: "2023-11-29T16:06:33.691874+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -31,10 +31,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.8.0-rc1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.8.0-rc1.tgz
     version: 1.8.0-rc1
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.444062+05:30"
+    created: "2023-11-29T16:06:33.684974+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -47,10 +47,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.7-rc6.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.7-rc6.tgz
     version: 1.7.7-rc6
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.437026+05:30"
+    created: "2023-11-29T16:06:33.677571+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -63,10 +63,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.7-rc5.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.7-rc5.tgz
     version: 1.7.7-rc5
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.42984+05:30"
+    created: "2023-11-29T16:06:33.670773+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -79,10 +79,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.7-rc4.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.7-rc4.tgz
     version: 1.7.7-rc4
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.423309+05:30"
+    created: "2023-11-29T16:06:33.664166+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -95,10 +95,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.7-rc3.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.7-rc3.tgz
     version: 1.7.7-rc3
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.366577+05:30"
+    created: "2023-11-29T16:06:33.606437+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -111,10 +111,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.7-rc2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.7-rc2.tgz
     version: 1.7.7-rc2
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.308671+05:30"
+    created: "2023-11-29T16:06:33.546486+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -127,10 +127,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.7-rc1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.7-rc1.tgz
     version: 1.7.7-rc1
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.249138+05:30"
+    created: "2023-11-29T16:06:33.486692+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.7.0-dev
@@ -143,10 +143,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.7.0-rc2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.7.0-rc2.tgz
     version: 1.7.0-rc2
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.2412+05:30"
+    created: "2023-11-29T16:06:33.47739+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -159,10 +159,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.6.0.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.6.0.tgz
     version: 1.6.0
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.234125+05:30"
+    created: "2023-11-29T16:06:33.469893+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -175,10 +175,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.6.0-rc3.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.6.0-rc3.tgz
     version: 1.6.0-rc3
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.227738+05:30"
+    created: "2023-11-29T16:06:33.463291+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -191,10 +191,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.6.0-rc2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.6.0-rc2.tgz
     version: 1.6.0-rc2
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.219497+05:30"
+    created: "2023-11-29T16:06:33.454669+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -207,10 +207,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.6.0-rc1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.6.0-rc1.tgz
     version: 1.6.0-rc1
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.212302+05:30"
+    created: "2023-11-29T16:06:33.447124+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -223,10 +223,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc7.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc7.tgz
     version: 1.1.0-rc7
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.204385+05:30"
+    created: "2023-11-29T16:06:33.439087+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -239,10 +239,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc6.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc6.tgz
     version: 1.1.0-rc6
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.197824+05:30"
+    created: "2023-11-29T16:06:33.431975+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -255,10 +255,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc5.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc5.tgz
     version: 1.1.0-rc5
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.188777+05:30"
+    created: "2023-11-29T16:06:33.423205+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -271,10 +271,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc4.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc4.tgz
     version: 1.1.0-rc4
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.180931+05:30"
+    created: "2023-11-29T16:06:33.415006+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -287,10 +287,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc3.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc3.tgz
     version: 1.1.0-rc3
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.173483+05:30"
+    created: "2023-11-29T16:06:33.408352+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -303,10 +303,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc2.tgz
     version: 1.1.0-rc2
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.166881+05:30"
+    created: "2023-11-29T16:06:33.401317+05:30"
     dependencies:
     - name: airflow
       repository: https://github.com/astronomer/airflow/releases/download/oss-helm-chart/1.3.1
@@ -319,10 +319,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.1.0-rc1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.1.0-rc1.tgz
     version: 1.1.0-rc1
   - apiVersion: v2
-    created: "2023-11-29T15:59:35.160106+05:30"
+    created: "2023-11-29T16:06:33.393796+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -335,10 +335,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.0.0-rc3.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.0.0-rc3.tgz
     version: 1.0.0-rc3
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.152895+05:30"
+    created: "2023-11-29T16:06:33.387543+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -351,10 +351,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.0.0-rc2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.0.0-rc2.tgz
     version: 1.0.0-rc2
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.147638+05:30"
+    created: "2023-11-29T16:06:33.381855+05:30"
     dependencies:
     - name: airflow
       repository: https://airflow.apache.org
@@ -367,10 +367,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-1.0.0-rc1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-1.0.0-rc1.tgz
     version: 1.0.0-rc1
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.141618+05:30"
+    created: "2023-11-29T16:06:33.375296+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -384,10 +384,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-0.20.2.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-0.20.2.tgz
     version: 0.20.2
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.136779+05:30"
+    created: "2023-11-29T16:06:33.370007+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -401,10 +401,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-0.20.0.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-0.20.0.tgz
     version: 0.20.0
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.476358+05:30"
+    created: "2023-11-29T16:06:33.717499+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -418,10 +418,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow/airflow-0.20.0.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow/airflow-0.20.0.tgz
     version: 0.20.0
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.132794+05:30"
+    created: "2023-11-29T16:06:33.365968+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -435,10 +435,10 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-0.19.1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-0.19.1.tgz
     version: 0.19.1
   - apiVersion: v1
-    created: "2023-11-29T15:59:35.13025+05:30"
+    created: "2023-11-29T16:06:33.363606+05:30"
     dependencies:
     - condition: postgresql.enabled
       name: postgresql
@@ -452,12 +452,12 @@ entries:
     - airflow
     name: airflow
     urls:
-    - airflow-0.19.0.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/airflow-0.19.0.tgz
     version: 0.19.0
   astronomer:
   - apiVersion: v2
     appVersion: 0.29.1
-    created: "2023-11-29T15:59:35.471919+05:30"
+    created: "2023-11-29T16:06:33.713065+05:30"
     dependencies:
     - condition: global.astronomerEnabled
       name: astronomer
@@ -544,11 +544,11 @@ entries:
     - astronomer
     name: astronomer
     urls:
-    - astronomer-0.29.1.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/astronomer-0.29.1.tgz
     version: 0.29.1
   - apiVersion: v2
     appVersion: 0.25.15
-    created: "2023-11-29T15:59:35.464842+05:30"
+    created: "2023-11-29T16:06:33.705888+05:30"
     dependencies:
     - condition: global.astronomerEnabled
       name: astronomer
@@ -642,17 +642,17 @@ entries:
     - astronomer
     name: astronomer
     urls:
-    - astronomer-0.25.15.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/astronomer-0.25.15.tgz
     version: 0.25.15
   cloudsql-proxy:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-11-29T15:59:35.472487+05:30"
+    created: "2023-11-29T16:06:33.714117+05:30"
     description: A Helm chart for Kubernetes
     digest: dfc56d4505fa40267d2ceec2e06cc66f65a9a394fa7ad31f88a1f7cb48dd9ac1
     name: cloudsql-proxy
     type: application
     urls:
-    - cloudsql-proxy-0.1.0.tgz
+    - https://pgvishnuram.github.io/airflow_sidecar_release/cloudsql-proxy-0.1.0.tgz
     version: 0.1.0
-generated: "2023-11-29T15:59:35.126239+05:30"
+generated: "2023-11-29T16:06:33.359206+05:30"
